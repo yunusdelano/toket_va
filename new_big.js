@@ -177,42 +177,15 @@ const genEmail = length =>
   });
 
 const domain = [
-  "v7ecub.com",
-  "mimpaharpur.cf",
-  "tahutex.online",
-  "escanor99.com",
-  "xemne.com",
-  "klubfreshviralnewz.club",
-  "hoanglong.tech",
-  "asifboot.com",
-  "lawrence1121.club",
-  "aiot.creo.site",
-  "gmail.cad.edu.gr",
-  "derbydales.co.uk",
-  "pro.cloudns.asia",
-  "edu.aiot.ze.cx",
-  "41054733.mail-temp.com",
-  "clan.ll47.net",
-  "creo.iotu.nctu.me",
-  "nasa.dmtc.edu.pl",
-  "bree.ll47.net",
-  "titaspaharpur1.cf",
-  "cakk.us",
-  "margarette1818.site",
-  "a6a.nl",
-  "zil4czsdz3mvauc2.gq",
-  "tebwinsoi.ooo",
-  "payforclick.net",
-  "kexukexu.xyz",
-  "zahuy.site",
-  "zgu5la23tngr2molii.ga",
-  "myfullstore.fun",
-  "atm-mi.ml"
+"creo.iotu.nctu.me",
+"nasa.dmtc.edu.pl",
+"41054733.mail-temp.com",
+"derbydales.co.uk"
 ];
 (async () => {
   for (let index = 0; index < LooP; index++) {
-    const item = await domain[(Math.floor(Math.random() * domain.length)) | 0];
-    const emel = await genEmail(14);
+    const item = await domain[(Math.random() * domain.length) | 0];
+    const emel = await genEmail(16);
     await delay(10000);
     const register = await functionRegister(emel, item);
     const email = emel + "@" + item;
